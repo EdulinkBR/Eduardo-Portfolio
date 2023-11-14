@@ -54,7 +54,7 @@ a:hover {
 
 
 
-
+/*t*/
 
 
 
@@ -116,43 +116,50 @@ a:hover {
             text-align:left;
         }
 
+        .rowss{
+            display: none;
+        }
+
+        .icon-container2{
+            display: none;
+        }
 
 
 
-        #icon-container{ /*Posso mover a linha de ícones livremente*/
+        .icon-container{ /*Posso mover a linha de ícones livremente*/
             padding-top: 3%;
             margin-left: -5%;
             position: relative;  
         }
-        #icon-container a {
+        .icon-container a {
             margin-right: 48px;
             position: relative;
             padding-left: 30px;
         }
         
-        #icon-container img {
+        .icon-container img {
             width: 48px;
             transition: transform 0.3s, color 0.3s;
         }
         
-        #icon-container img:hover { /*seta a pripriedade para aumentar o icone em 1.5 e transforma o cursor do mouse em um pointer*/
+       .icon-container img:hover { /*seta a pripriedade para aumentar o icone em 1.5 e transforma o cursor do mouse em um pointer*/
 
             transform: scale(1.5);
             cursor: pointer;
         }
         
-        #icon-container img + img { /*esconde o ícone com a propriedade visibility*/
+        .icon-container img + img { /*esconde o ícone com a propriedade visibility*/
             visibility: hidden;
             position: absolute;
             top: -25px; /* posição vertical dos ícones azuis */
             left: 30px;
         }
         
-        #icon-container a:hover img {
+        .icon-container a:hover img {
             visibility: hidden; /* Oculta os ícones brancos quando passar o mouse sobre os links */
         }
         
-        #icon-container a:hover img + img {
+        .icon-container a:hover img + img {
             visibility: visible; /* Mostra os ícones azuis quando passar o mouse sobre os links */
         }
         
@@ -388,7 +395,210 @@ flex-direction: column;
 align-items: center;   
 }
 
-@media(max-width:768px){
+#mainphoto, .textmob1 {
+    display: none;
+}
+#imagemob2{
+display: none;    
+}
+
+
+@media (max-width: 768px) {
+
+
+    nav{
+        display: none;
+        }
+    .footer-navigation{
+        display: block;
+    }
+    #background-banner {
+        display: none;
+    }
+
+    #pretitle {
+        display: none;
+    }
+
+    #background-text2 {
+        display: none;
+    }
+
+    #background-text3 {
+        display: none;
+    }
+
+    #background-text4 {
+        display: none;
+    }
+
+    .icon-container {
+       display: none;
+    }
+
+    #background-container1 {
+        display: none;
+    }
+
+    #background-container-about1 {
+        display: none;
+    }
+
+    #background-container-aboutme {
+        display: none;
+    }
+
+    #background-container-about2 {
+        display: none;
+    }
+
+    #trailer-container {
+        display: none;
+    }
+
+    #antetitlesinopse {
+        display: none;
+    }
+
+    #video-container {
+        display: none;
+    }
+
+    #sinopsecontainer {
+        display: none;
+    }
+
+    #sinopsetext1 {
+        display: none;
+    }
+
+    #sinopsetext2 {
+        display: none;
+    }
+
+    .cards-content{
+        display: none;
+    }
+    .gridcontainer1 {
+        align-items: center;
+    }
+    
+    .columncontainer1 {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .columncontainer2{
+        
+    }
+    
+    #mainphoto {
+        display: block;
+        width: 320px;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    .icon-container2 {
+        display: block;
+    }
+
+
+    .icon-container2{ /*Posso mover a linha de ícones livremente*/
+        padding-top: 3%;
+        
+        position: relative;  
+    }
+ 
+    .icon-container2 img {
+        width: 30px;
+        transition: transform 0.3s, color 0.3s;
+    }
+    
+
+    .gridcontainerss {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .columnss{
+        text-align: center;
+    }
+    
+    .rowss{
+        display: block;
+    }
+    
+#imagemob2{
+    margin-top: 15px;
+}
+#secondphoto{
+    display: block;
+   
+        width: 320px;
+        height: auto;
+        margin: 0 auto;
+}
+
+    .rowss:nth-child(1) {
+    /*aqui é a foto */
+    }
+    
+    .rowss:nth-child(2) {
+   
+        font-family: 'Roboto', sans-serif;
+        font-weight: normal;
+        color: #ffffff;
+        font-size: 16px;
+        text-align: center;
+        width: 310px;
+        height: auto;
+        margin-top: 15px;
+        /*aqui é o texto*/
+    }
+    
+    .rowss:nth-child(3) {
+       
+    }
+    
+    /*.rowss:nth-child(3).icon-container {
+        display: none;
+    }*/
+    
+    .rowss:nth-child(4) { /*foto livro 2*/
+  margin-top: 15px;
+    }
+    .rowss:nth-child(5) { /* texto sobre mim*/
+        font-family: 'Roboto', sans-serif;
+        font-weight: normal;
+        color: #ffffff;
+        font-size: 16px;
+        text-align: center;
+        width: 310px;
+        height: auto;
+        margin-top: 15px;
+    }
+    .rowss:nth-child(6) {
+        background-color: #ff9633; /* Cor de fundo para a terceira linha */
+    }
+    .rowss:nth-child(7) {
+        font-family: 'Roboto', sans-serif;
+        font-weight: normal;
+        color: #ffffff;
+        font-size: 16px;
+        text-align: center;
+        width: 310px;
+        height: auto;
+        margin-top: 15px;
+    }
+    
+    
+   
+
+
+}
+/*@media(max-width:768px){
     .footer-navigation{
         display: block;
     }
@@ -433,27 +643,8 @@ align-items: center;
 #trailer-container {
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .cards-content{
     grid-template-columns: 1fr;
     margin-top: 150px;
 }
-}
+}*/
