@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: #333333;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+    /* Ativar o flex para horizontal, space evenly pra melhorar a distribuição */
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+a {
+    list-style: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Roboto', sans-serif;
+}
+iframe{ /*Iframe é o conteudo do video declarado no html */
+    box-shadow: 0px 0px 10px #00baff, 0px 0px 20px rgba(0, 0, 0, 0.8);
+}
+a:hover {
+    color: #00baff;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+    margin-top: 10px;
+}

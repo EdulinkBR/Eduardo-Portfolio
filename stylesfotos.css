@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: #333333;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+    /* Ativar o flex para horizontal, space evenly pra melhorar a distribuição */
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+a {
+    list-style: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Roboto', sans-serif;
+}
+iframe{ /*Iframe é o conteudo do video declarado no html */
+    box-shadow: 0px 0px 10px #00baff, 0px 0px 20px rgba(0, 0, 0, 0.8);
+}
+a:hover {
+    color: #00baff;
+}
+#logo {
+    width: 150px;
+    height: auto;
+    margin-top: 10px;
+}
+
+
+.container-photos{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 5%;  
+    
+    }
+    .container-photos{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+     
+    }
+    
+    .photo{
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 400px auto;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #ffffff;   
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0px 0px 10px #ffffff, 0px 0px 20px rgba(0, 0, 0, 0.8); 
+    
+    }
+    .card:hover{
+        transform: scale(1.02);
+        box-shadow: 0px 0px 10px #00baff, 0px 0px 20px rgba(0, 0, 0, 0.8); 
+    }
+    .photo-1 {
+        background-image: url('./Imagens/CR.png');
+    }
+    .photo-2 {
+        background-image: url('./Imagens/CR4.gif');
+    }
+    .photo-3 {
+        background-image: url('./Imagens/eduardo\ web3.png');
+    }
