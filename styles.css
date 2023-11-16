@@ -285,12 +285,21 @@ right: 100px;
 .boldnameblue{
    font-weight: 900;
    color: #00baff;
+   font-size: 24px; 
+
 }
 
 .boldnameorange{
    font-weight: 900;
-   color: #FF8700;
+    font-size: 24px; 
+    color: #FF8700;
 }
+.boldwhite{
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 16px; 
+ }
+
 
 
 
@@ -528,6 +537,7 @@ display: none;
     
     .rowss{
         display: block;
+        display: grid;
     }
     
 #imagemob2{
@@ -543,6 +553,8 @@ display: none;
 
     .rowss:nth-child(1) {
     /*aqui é a foto */
+    align-items: center;
+    justify-content: center;
     }
     
     .rowss:nth-child(2) {
@@ -555,19 +567,26 @@ display: none;
         width: 310px;
         height: auto;
         margin-top: 15px;
+        align-items: center;
+        justify-content: center;
         /*aqui é o texto*/
     }
     
     .rowss:nth-child(3) {
-       
+        margin-bottom: 10px;
+        align-items: center;
+        justify-content: center;
     }
+
     
     /*.rowss:nth-child(3).icon-container {
         display: none;
     }*/
     
     .rowss:nth-child(4) { /*foto livro 2*/
-  margin-top: 15px;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: center;
     }
     .rowss:nth-child(5) { /* texto sobre mim*/
         font-family: 'Roboto', sans-serif;
@@ -577,10 +596,14 @@ display: none;
         text-align: center;
         width: 310px;
         height: auto;
-        margin-top: 15px;
+        margin-bottom: 15px;
+        align-items: center;
+        justify-content: center;
     }
     .rowss:nth-child(6) {
-        background-color: #ff9633; /* Cor de fundo para a terceira linha */
+        margin-bottom: 15px;
+        align-items: center;
+        justify-content: center;
     }
     .rowss:nth-child(7) {
         font-family: 'Roboto', sans-serif;
@@ -591,6 +614,7 @@ display: none;
         width: 310px;
         height: auto;
         margin-top: 15px;
+        margin-bottom: 15px;
     }
     
     
