@@ -435,7 +435,48 @@ span {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
+
+
 
     footer {
         display: none;
@@ -550,14 +591,18 @@ span {
 
     .icon-container2 {
         /*Posso mover a linha de ícones livremente*/
-        padding-top: 3%;
-
-        position: relative;
+        padding-top: 10px;
+       
     }
 
+
+    
     .icon-container2 img {
-        width: 30px;
+        width: 40px;
+        height: auto;
         transition: transform 0.3s, color 0.3s;
+        margin-right: 20px;
+        
     }
 
 
@@ -603,17 +648,18 @@ span {
         font-weight: normal;
         color: #ffffff;
         font-size: 16px;
-        text-align: center;
-        width: 310px;
+        text-align: left;
+        width: 320px;
         height: auto;
         padding-top: 15px;
         padding-bottom: 15px;
         align-items: center;
         justify-content: center;
+        letter-spacing: 0.5px;
         /*aqui é o texto*/
     }
 
-    .rowss:nth-child(3) {
+    .rowss:nth-child(3) { /*icon cont.*/
         padding-top: 15px;
         padding-bottom: 15px;
         align-items: center;
@@ -634,59 +680,96 @@ span {
         font-weight: normal;
         color: #ffffff;
         font-size: 16px;
-        text-align: center;
+        text-align: left;
         width: 310px;
         padding-top: 15px;
         padding-bottom: 15px;
         align-items: center;
         justify-content: center;
+        letter-spacing: 0.6px;
     }
 
-    .rowss:nth-child(6) {  /*nome conhece recife*/
+    .rowss:nth-child(6) {
+        /*nome conhece recife*/
         padding-top: 15px;
         padding-bottom: 15px;
         align-items: center;
         justify-content: center;
+        letter-spacing: 0.6px;
     }
 
-    .rowss:nth-child(7) {  /*video*/
+    .rowss:nth-child(7) {
+        /*video*/
         font-family: 'Roboto', sans-serif;
         font-weight: normal;
         color: #ffffff;
         font-size: 16px;
-        text-align: center;
+        text-align: left;
+        width: 310px;
+        height: auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        letter-spacing: 0.6px;
+    }
+
+    .rowss:nth-child(8) {
+        /* contxto do video l8*/
+        font-family: 'Roboto', sans-serif;
+        font-weight: normal;
+        color: #ffffff;
+        font-size: 16px;
+        text-align: left;
         width: 310px;
         height: auto;
         padding-top: 15px;
         padding-bottom: 15px;
     }
 
-    .rowss:nth-child(8) {  /* */
-        font-family: 'Roboto', sans-serif;
-        font-weight: normal;
-        color: #ffffff;
-        font-size: 16px;
-        text-align: center;
-        width: 310px;
-        height: auto;
-        padding-top: 15px;
-        padding-bottom: 15px;
+    .rowss:nth-child(9) {
+        /* cards*/
+
     }
 
-    .rowss:nth-child(9) {  /* */
-        font-family: 'Roboto', sans-serif;
-        font-weight: normal;
-        color: #ffffff;
-        font-size: 16px;
-        text-align: center;
-        width: 310px;
-        height: auto;
+    .rowss:nth-child(10) {
+        /* */
+      
+    }
+    #logo{
         padding-top: 15px;
         padding-bottom: 15px;
+        margin: 0 auto; /* Centraliza horizontalmente */
     }
 
+    .rowss:nth-child(11) {
+        /* */
 
+    }
 
+    .card {
+        height: 200px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 150px auto;
+        transition: 1s;
+        display: flex;
+        text-align: left;
+        color: #ffffff;
+        font-size: 17px;
+        font-family: 'Roboto', sans-serif;
+        box-shadow: 0px 0px 10px #ffffff, 0px 0px 20px rgba(0, 0, 0, 0.8);
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .card p {
+        text-align: left;
+    }
+
+    .banner-2 {
+        background-size: 130px auto;
+        
+    }
+
+    
 
 }
 
