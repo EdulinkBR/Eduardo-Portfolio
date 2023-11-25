@@ -60,310 +60,6 @@ a:hover {
 /*t*/
 
 
-
-#background-banner {
-    background-image: url('./Imagens/Foto_Pagina2.jpg');
-    box-shadow: 0px 0px 10px #00baff, 0px 0px 20px rgba(0, 0, 0, 0.8);
-    background-position: 17%;
-    background-repeat: no-repeat;
-    background-size: 600px auto;
-    z-index: 1;
-    width: auto;
-    height: 500px;
-    background-color: #333333;
-    margin-top: 10px;
-    position: relative;
-}
-
-
-
-#pretitle {
-    position: absolute;
-    font-family: 'Roboto', sans-serif;
-    font-weight: normal;
-    color: #ffffff;
-    font-size: 16px;
-    top: 8%;
-    left: 50.1%;
-    font-weight: 300;
-}
-
-#background-text2 {
-    position: absolute;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    font-weight: 900;
-    font-size: 48px;
-    top: 14%;
-    left: 50%;
-}
-
-#background-text3 {
-    position: absolute;
-    font-family: 'Roboto', sans-serif;
-    color: #00baff;
-    font-weight: 900;
-    font-size: 48px;
-    top: 26%;
-    left: 50%;
-}
-
-#background-text4 {
-    position: absolute;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    font-size: 24px;
-    width: 35%;
-    top: 40%;
-    left: 50%;
-    text-align: left;
-}
-
-.rowss {
-    display: none;
-}
-
-.icon-container2 {
-    display: none;
-}
-
-
-
-.icon-container {
-    /*Posso mover a linha de ícones livremente*/
-    padding-top: 3%;
-    margin-left: -5%;
-    position: relative;
-}
-
-.icon-container a {
-    margin-right: 48px;
-    position: relative;
-    padding-left: 30px;
-}
-
-.icon-container img {
-    width: 48px;
-    transition: transform 0.3s, color 0.3s;
-}
-
-.icon-container img:hover {
-    /*seta a pripriedade para aumentar o icone em 1.5 e transforma o cursor do mouse em um pointer*/
-
-    transform: scale(1.5);
-    cursor: pointer;
-}
-
-.icon-container img+img {
-    /*esconde o ícone com a propriedade visibility*/
-    visibility: hidden;
-    position: absolute;
-    top: -25px;
-    /* posição vertical dos ícones azuis */
-    left: 30px;
-}
-
-.icon-container a:hover img {
-    visibility: hidden;
-    /* Oculta os ícones brancos quando passar o mouse sobre os links */
-}
-
-.icon-container a:hover img+img {
-    visibility: visible;
-    /* Mostra os ícones azuis quando passar o mouse sobre os links */
-}
-
-/*#background-container-bluestripe{ ANTIGA TARJA AZUL, ADICIONA SE QUISER
-            background-color: rgba(0, 186, 255, 75%);
-            opacity: 30.0;
-            z-index: 1;    
-        }*/
-
-#background-container1 {
-    box-shadow: 0px 0px 10px #00baff, 0px 0px 20px rgba(0, 0, 0, 0.8);
-    background-image: url('./Imagens/fotolivro.jpg');
-    background-repeat: no-repeat;
-    background-size: 600px auto;
-    background-position-x: 22%;
-    /* left;*/
-    background-size: 18%;
-    background-position-y: 50%;
-    width: auto;
-    height: 500px;
-    background-color: #333333;
-
-    position: relative;
-    visibility: visible;
-}
-
-#background-container-about1 {
-    position: relative;
-    font-family: 'Roboto', sans-serif;
-    color: #ffffff;
-    font-size: 16px;
-    left: 50.1%;
-    top: 7%;
-    text-align: justiflefty;
-    width: 35%;
-    font-weight: 300;
-
-}
-
-#background-container-aboutme {
-    position: absolute;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    font-weight: 900;
-    font-size: 48px;
-    top: 13%;
-    left: 50%;
-
-}
-
-
-
-#background-container-about2 {
-    position: relative;
-    font-family: 'Roboto', sans-serif;
-    font-weight: normal;
-    color: #ffffff;
-    font-size: 24px;
-    top: 18%;
-    left: 50%;
-    width: 35%;
-}
-
-
-
-
-#trailer-container {
-    box-shadow: 0px 0px 10px #00baff, 0px 0px 20px rgba(0, 0, 0, 0.8);
-    /* width: 100%;  ativar, se precisar, mas acredito que não seja necessário */
-    height: 550px;
-    display: flex;
-    position: relative;
-
-}
-
-#antetitlesinopse {
-    position: relative;
-    font-family: 'Roboto', sans-serif;
-    color: #ffffff;
-    font-size: 16px;
-    left: 50.1%;
-    top: 7%;
-    text-align: justiflefty;
-    width: 35%;
-    font-weight: 300;
-
-}
-
-#video-container {
-    margin-top: 100px;
-    position: relative;
-    left: 120px;
-    z-index: 1;
-
-}
-
-#sinopsecontainer {
-    position: relative;
-    z-index: -1;
-    right: 100px;
-}
-
-#sinopsetext1 {
-    margin-top: 50px;
-    position: relative;
-    font-family: 'Roboto', sans-serif;
-    font-size: 45px;
-    left: 50%;
-}
-
-#sinopsetext2 {
-    width: 700px;
-    font-family: 'Roboto', sans-serif;
-    color: #ffffff;
-    position: relative;
-    text-align: left;
-    font-size: 25px;
-    left: 50%;
-    top: 2.5%;
-}
-
-.boldname {
-    font-weight: 900;
-}
-
-.boldnameblue {
-    font-weight: 900;
-    color: #00baff;
-    font-size: 24px;
-
-}
-
-.boldnameorange {
-    font-weight: 900;
-    font-size: 24px;
-    color: #FF8700;
-}
-
-.boldwhite {
-    font-weight: 900;
-    color: #ffffff;
-    font-size: 16px;
-}
-
-
-
-
-/*#buttonlinked {
-	box-shadow: 0px 1px 0px 0px #333333;
-	box-shadow: 0px 0px 10px #00baff, 0px 0px 20px rgba(0, 0, 0, 0.8);
-    background: linear-gradient(to bottom, #00bbff 5%, #019ad2 100%);
-	background-color: #00bbff;
-	border-radius: 6px;
-	border: 1px solid #057fd0;
-	display: inline-block;
-	cursor: pointer;
-	color: #ffffff;
-	font-family: Roboto;
-	font-size: 15px;
-	font-weight: bold;
-	padding: 6px 24px;
-	text-decoration: none;
-	text-shadow: 0px -1px 0px #5b6178;
-    margin-left: 40%;
-    margin-top: 5%;
-}
-#buttonlinked:hover {
-	background:linear-gradient(to bottom, #019ad2 5%, #00bbff 100%);
-	background-color:#019ad2;
-}
-#buttonlinked:active {
-	
-	top:1px;
-}
-
-*/
-.project-cards-container {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-left: 10%;
-
-}
-
-.cards-content {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 20px;
-    column-gap: 40px;
-
-}
-
 .card {
 
     height: 600px;
@@ -401,6 +97,31 @@ a:hover {
     background-image: url('./Imagens/eduardo\ web3.png');
 }
 
+.boldname {
+    font-weight: 900;
+}
+
+.boldnameblue {
+    font-weight: 900;
+    color: #00baff;
+    font-size: 48px;
+
+
+
+}
+
+.boldnameorange {
+    font-weight: 900;
+    font-size: 48px;
+    color: #FF8700;
+}
+
+.boldwhite {
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 16px;
+}
+
 footer {
     height: 300px;
     margin-top: 100px;
@@ -415,29 +136,206 @@ span {
     font-family: 'Roboto', sans-serif;
 }
 
-.footer-navigation {
-    display: none;
+
+/*botões redes sociais iconesweb*/
+
+.iconesweb {
+    margin-top: 15px;
 }
 
-.footer-list {
+.iconesweb a {
+    position: relative;
+    display: inline-block;
+    margin-right: 70px;
+}
+
+.iconesweb img {
+    width: 48px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.iconesweb img:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.iconesweb img+img {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.iconesweb a:hover img {
+    visibility: hidden;
+}
+
+.iconesweb a:hover img+img {
+    visibility: visible;
+}
+
+/*botões redes sociais iconesweb*/
+
+
+.container {
+    display: grid;
+}
+
+.antetitulo {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.titulo {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.subtitulo {
+    font-family: 'Roboto', sans-serif;
+    color: #00baff;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.texto {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: left;
+    font-size: 24px;
+    max-width: 35vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.titulo, .subtitulo, .texto, .antetitulo {}
+
+.linha1, .linha2, .linha3{
+    min-height: 800px;
+    width: auto;
+    box-shadow: 0px 0px 8px #00baff, 0px 0px 8px rgba(0, 0, 0, 0.8);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+}
+
+.linha4{
+    min-height: 800px;
+    width: auto;
+    box-shadow: 0px 0px 8px #00baff, 0px 0px 8px rgba(0, 0, 0, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+}
+
+
+.item1, .item2 {
+    height: 900px;
+    width: auto;
+    margin-inline-start: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.linha1 .item1 {
+    background-image: url('./Imagens/Foto_Pagina2.jpg');
+    background-size: 40vw;
+    
+    
+}
+
+.item2 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+/*Neste exemplo, o padding será aplicado apenas aos elementos .antetitulo, .titulo, .subtitulo, e .texto que estão dentro do .item2. 
+Se esses elementos também existirem fora do .item2 e você não desejar que o padding seja aplicado a eles, eles não serão afetados por essas regras.*/
+.item2 .antetitulo,
+.item2 .titulo,
+.item2 .subtitulo,
+.item2 .texto {
+    padding: 2px;
+}
+
+.linha2 .item1{
+    background-image: url('./Imagens/fotolivro.jpg');
+    background-size: 35vw;
+}
+.linha3 .item1 {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-#mainphoto,
-.textmob1 {
-    display: none;
-}
-
-#imagemob2 {
-    display: none;
+.linha3 .item1 iframe {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 
 
 
 
+/* Adicione estilos adicionais conforme necessário */
+.project-cards-container2 {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.cards-content2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+
+}
+
+.card {
+
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20vw;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #ffffff;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0px 0px 10px #ffffff, 0px 0px 20px rgba(0, 0, 0, 0.8);
+
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 10px #00baff, 0px 0px 20px rgba(0, 0, 0, 0.8);
+}
+
+.banner-1 {
+    background-image: url('./Imagens/CR.png');
+}
+
+.banner-2 {
+    background-image: url('./Imagens/CR4.gif');
+}
+
+.banner-3 {
+    background-image: url('./Imagens/eduardo\ web3.png');
+}
 
 
 
@@ -448,35 +346,22 @@ span {
 
 
 
+.gridcontainerss {
+    display: none;
+}
 
 
 
+@media (min-width: 1141px) and (max-width: 1649px) {}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (min-width: 1141px) and (max-width: 1268px) {}
 
 @media (max-width: 768px) {
 
-
+    .container {
+        display: none;
+    }
 
     footer {
         display: none;
@@ -592,17 +477,17 @@ span {
     .icon-container2 {
         /*Posso mover a linha de ícones livremente*/
         padding-top: 10px;
-       
+
     }
 
 
-    
+
     .icon-container2 img {
         width: 40px;
         height: auto;
         transition: transform 0.3s, color 0.3s;
         margin-right: 20px;
-        
+
     }
 
 
@@ -659,7 +544,8 @@ span {
         /*aqui é o texto*/
     }
 
-    .rowss:nth-child(3) { /*icon cont.*/
+    .rowss:nth-child(3) {
+        /*icon cont.*/
         padding-top: 15px;
         padding-bottom: 15px;
         align-items: center;
@@ -732,12 +618,14 @@ span {
 
     .rowss:nth-child(10) {
         /* */
-      
+
     }
-    #logo{
+
+    #logo {
         padding-top: 15px;
         padding-bottom: 15px;
-        margin: 0 auto; /* Centraliza horizontalmente */
+        margin: 0 auto;
+        /* Centraliza horizontalmente */
     }
 
     .rowss:nth-child(11) {
@@ -760,16 +648,17 @@ span {
         margin-bottom: 30px;
         margin-top: 30px;
     }
+
     .card p {
         text-align: left;
     }
 
     .banner-2 {
         background-size: 130px auto;
-        
+
     }
 
-    
+
 
 }
 
