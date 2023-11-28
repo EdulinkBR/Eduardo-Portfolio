@@ -54,12 +54,6 @@ a:hover {
     color: #00baff;
 }
 
-
-
-
-/*t*/
-
-
 .card {
 
     height: 600px;
@@ -86,15 +80,15 @@ a:hover {
 }
 
 .banner-1 {
-    background-image: url('./Imagens/CR.png');
+    background-image: url('./Imagens/Fotos\ do\ Portfólio/CR.png');
 }
 
 .banner-2 {
-    background-image: url('./Imagens/CR4.gif');
+    background-image: url('./Imagens/Fotos\ do\ Portfólio/CR4.gif');
 }
 
 .banner-3 {
-    background-image: url('./Imagens/eduardo\ web3.png');
+    background-image: url('./Imagens/Fotos do Portfólio/logo.png');
 }
 
 .boldname {
@@ -243,7 +237,7 @@ span {
 }
 
 .linha1 .item1 {
-    background-image: url('./Imagens/Foto_Pagina2.jpg');
+    background-image: url('./Imagens/Fotos\ do\ Portfólio/foto1.jpg');
     background-size: 40vw;
     
     
@@ -266,7 +260,7 @@ Se esses elementos também existirem fora do .item2 e você não desejar que o p
 }
 
 .linha2 .item1{
-    background-image: url('./Imagens/fotolivro.jpg');
+    background-image: url('./Imagens/Fotos\ do\ Portfólio/foto2.jpg');
     background-size: 35vw;
 }
 .linha3 .item1 {
@@ -326,15 +320,15 @@ Se esses elementos também existirem fora do .item2 e você não desejar que o p
 }
 
 .banner-1 {
-    background-image: url('./Imagens/CR.png');
+    background-image: url('./Imagens/Fotos\ do\ Portfólio/CR.png');
 }
 
 .banner-2 {
-    background-image: url('./Imagens/CR4.gif');
+    background-image: url('./Imagens/Fotos\ do\ Portfólio/CR4.gif');
 }
 
 .banner-3 {
-    background-image: url('./Imagens/eduardo\ web3.png');
+    background-image: url('./Imagens/Fotos do Portfólio/logo.png');
 }
 
 
@@ -379,46 +373,17 @@ Se esses elementos também existirem fora do .item2 e você não desejar que o p
         display: none;
     }
 
-    #background-banner {
-        display: none;
-    }
 
     #pretitle {
         display: none;
     }
 
-    #background-text2 {
-        display: none;
-    }
-
-    #background-text3 {
-        display: none;
-    }
-
-    #background-text4 {
-        display: none;
-    }
 
     .icon-container {
         display: none;
     }
 
-    #background-container1 {
-        display: none;
-    }
-
-    #background-container-about1 {
-        display: none;
-    }
-
-    #background-container-aboutme {
-        display: none;
-    }
-
-    #background-container-about2 {
-        display: none;
-    }
-
+    
     #trailer-container {
         display: none;
     }
@@ -428,18 +393,6 @@ Se esses elementos também existirem fora do .item2 e você não desejar que o p
     }
 
     #video-container {
-        display: none;
-    }
-
-    #sinopsecontainer {
-        display: none;
-    }
-
-    #sinopsetext1 {
-        display: none;
-    }
-
-    #sinopsetext2 {
         display: none;
     }
 
@@ -661,54 +614,3 @@ Se esses elementos também existirem fora do .item2 e você não desejar que o p
 
 
 }
-
-/*@media(max-width:768px){
-    .footer-navigation{
-        display: block;
-    }
-
-    nav{
-    display: none;
-    }
-
-    #backgroundbanner{
-        background-position: 40%;
-    }
-
-    #background-text1{
-        display: none;
-    }
-    #background-text2{
-        display: none;
-    }
-    #background-text3{
-        display: none;
-    }
-    #background-text4{
-        position: absolute;
-        width: 50%;
-        height: 600px;
-    }
-
- 
-    #background-container1 {
-        visibility: hidden;
-    }
-    
-    #background-container-aboutme{
-   
-    }
-
-    #background-container-about{
-
-    }
-
-    
-#trailer-container {
-    
-}
-.cards-content{
-    grid-template-columns: 1fr;
-    margin-top: 150px;
-}
-}*/
