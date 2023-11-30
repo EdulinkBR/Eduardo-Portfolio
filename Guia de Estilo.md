@@ -24,3 +24,7 @@ font-weight: 400;
 <h3 style="font-size: 16px;">Este é um cabeçalho H3 com fonte de 16px.</h3>
 <h2 style="font-size: 24px;">Este é um cabeçalho H2 com fonte de 24px.</h2>
 <h1 style="font-size: 32px;">Este é um cabeçalho H1 com fonte de 32px.</h1>
+
+
+#00baff
+#333333
