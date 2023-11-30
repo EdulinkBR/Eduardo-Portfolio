@@ -57,13 +57,17 @@ window.onload = () => {
             newIndex = i;
             preview();
 
-            const prevBtn = document.querySelector(".prev");
-            const nextBtn = document.querySelector(".next");
-            if (newIndex == 0) {
+            const prevBtn = document.querySelector(".slide.prev");
+            const nextBtn = document.querySelector(".slide.next");
+            if (newIndex === 0) {
                 prevBtn.style.display = "none";
+            } else {
+                prevBtn.style.display = "block";
             }
-            if (newIndex >= gallery.length - 1) {
+            if (newIndex === gallery.length - 1) {
                 nextBtn.style.display = "none";
+            } else {
+                nextBtn.style.display = "block";
             }
 
             prevBtn.onclick = () => {

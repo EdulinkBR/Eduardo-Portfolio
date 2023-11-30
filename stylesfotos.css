@@ -61,6 +61,7 @@ a:hover {
 }
 
 .wrapper {
+    position: relative; /* Adicione esta propriedade */
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -114,6 +115,7 @@ a:hover {
     transform: translate(-50%, -50%) scale(1);
     transition: all 0.3s ease;
 }
+
 .preview-box img {
     width: 100%;
     height: auto;
@@ -167,12 +169,27 @@ a:hover {
     border-radius: 3px;
 }
 
+.slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #00baff;
+    font-size: 30px;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 .slide.prev {
-    left: 0px;
+    left: 0;
 }
 
 .slide.next {
-    right: 0px;
+    right: 0;
 }
 
 .image-box img {
