@@ -52,6 +52,12 @@ a:hover {
     color: #00baff;
 }
 
+
+
+
+
+
+
 .containerofphotos {
     padding: 10px;
     display: flex;
@@ -61,7 +67,7 @@ a:hover {
 }
 
 .wrapper {
-    position: relative; /* Adicione esta propriedade */
+    position: relative;
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -81,7 +87,7 @@ a:hover {
     overflow: hidden;
 }
 
-.gallery .image img {
+.gallery .image img { /* aqui pra aumentar ou diminuir o tamanho das imagens sem ser no modo preview */
     max-height: 400px;
     width: auto;
     max-width: 100%;
@@ -118,8 +124,8 @@ a:hover {
 
 .preview-box img {
     width: 100%;
-    height: auto;
     max-width: none;
+    max-height: 62vh; /*ajuste de altura para o modo preview */
 }
 
 .preview-box .details {
@@ -185,11 +191,11 @@ a:hover {
 }
 
 .slide.prev {
-    left: 0;
+    left: -40px;
 }
 
 .slide.next {
-    right: 0;
+    right:-40px;
 }
 
 .image-box img {
@@ -209,6 +215,13 @@ a:hover {
     background: rgba(0, 0, 0, 0.45);
 }
 
+
+
+
+
+
+
+
 @media (max-width: 1000px) {
     .gallery .image {
         width: calc(100% / 2);
@@ -219,7 +232,7 @@ a:hover {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .gallery .image {
         width: 100%;
         padding: 4px;

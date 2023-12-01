@@ -13,6 +13,8 @@ window.onload = () => {
     let clickedImgIndex;
     let autoSlide;
 
+    let isMouseDown = false;
+
     function preview() {
         currentImg.textContent = newIndex + 1;
         let imageURL = gallery[newIndex].querySelector("img").src;
@@ -48,6 +50,23 @@ window.onload = () => {
 
     startAutoSlide();
 
+    galleryContainer.addEventListener('mousedown', () => {
+        isMouseDown = true;
+        clearInterval(autoSlide);
+    });
+
+    galleryContainer.addEventListener('mouseup', () => {
+        isMouseDown = false;
+        startAutoSlide();
+    });
+
+    galleryContainer.addEventListener('mouseleave', () => {
+        if (isMouseDown) {
+            isMouseDown = false;
+            startAutoSlide();
+        }
+    });
+
     for (let i = 0; i < gallery.length; i++) {
         totalImg.textContent = gallery.length;
 
@@ -57,13 +76,15 @@ window.onload = () => {
             newIndex = i;
             preview();
 
-            const prevBtn = document.querySelector(".slide.prev");
-            const nextBtn = document.querySelector(".slide.next");
+            const prevBtn = document.querySelector(".prev");
+            const nextBtn = document.querySelector(".next");
+
             if (newIndex === 0) {
                 prevBtn.style.display = "none";
             } else {
                 prevBtn.style.display = "block";
             }
+
             if (newIndex === gallery.length - 1) {
                 nextBtn.style.display = "none";
             } else {
@@ -114,7 +135,6 @@ window.onload = () => {
         }
     }
 
-    // Adicionando botão "anterior" à esquerda do wrapper
     const prevButton = document.createElement('div');
     prevButton.className = 'slide prev';
     prevButton.innerHTML = '<i class="fas fa-arrow-left" style="color: #00baff;"></i>';
@@ -131,14 +151,13 @@ window.onload = () => {
         resetAutoSlide();
         scrollGallery();
     };
-    // Centralizar a seta da esquerda na parte média do quadrado
+
     const wrapperRect = wrapper.getBoundingClientRect();
     const arrowHeight = prevButton.offsetHeight;
     const arrowTop = (wrapperRect.height - arrowHeight) / 2;
     prevButton.style.top = arrowTop + 'px';
     wrapper.insertBefore(prevButton, wrapper.firstChild);
 
-    // Adicionando botão "próximo" à direita do wrapper
     const nextButton = document.createElement('div');
     nextButton.className = 'slide next';
     nextButton.innerHTML = '<i class="fas fa-arrow-right" style="color: #00baff;"></i>';
@@ -157,7 +176,6 @@ window.onload = () => {
     };
     wrapper.appendChild(nextButton);
 
-    // Fechar a janela de preview ao clicar fora da área da foto
     shadow.onclick = () => {
         newIndex = clickedImgIndex;
         prevButton.style.display = "block";
@@ -167,4 +185,40 @@ window.onload = () => {
         document.querySelector("body").style.overflow = "scroll";
         resetAutoSlide();
     };
+
+    const prevBtnInside = document.createElement('div');
+    prevBtnInside.className = 'slide prev inside';
+    prevBtnInside.innerHTML = '<i class="fas fa-arrow-left" style="color: #00baff;"></i>';
+    prevBtnInside.onclick = () => {
+        newIndex--;
+        if (newIndex <= 0) {
+            newIndex = 0;
+            prevBtnInside.style.display = "none";
+        } else {
+            prevBtnInside.style.display = "block";
+        }
+        nextBtnInside.style.display = "block";
+        preview();
+        resetAutoSlide();
+        scrollGallery();
+    };
+    previewBox.appendChild(prevBtnInside);
+
+    const nextBtnInside = document.createElement('div');
+    nextBtnInside.className = 'slide next inside';
+    nextBtnInside.innerHTML = '<i class="fas fa-arrow-right" style="color: #00baff;"></i>';
+    nextBtnInside.onclick = () => {
+        newIndex++;
+        if (newIndex >= gallery.length - 1) {
+            newIndex = gallery.length - 1;
+            nextBtnInside.style.display = "none";
+        } else {
+            nextBtnInside.style.display = "block";
+        }
+        prevBtnInside.style.display = "block";
+        preview();
+        resetAutoSlide();
+        scrollGallery();
+    };
+    previewBox.appendChild(nextBtnInside);
 };
