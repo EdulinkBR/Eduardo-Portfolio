@@ -25,6 +25,10 @@ font-weight: 400;
 <h2 style="font-size: 24px;">Este é um cabeçalho H2 com fonte de 24px.</h2>
 <h1 style="font-size: 32px;">Este é um cabeçalho H1 com fonte de 32px.</h1>
 
+Texto é 24px
+Subtitulo/titulo 48px
+antetilo 16px
+
 
 #00baff
 #333333

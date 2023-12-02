@@ -52,12 +52,6 @@ a:hover {
     color: #00baff;
 }
 
-
-
-
-
-
-
 .containerofphotos {
     padding: 10px;
     display: flex;
@@ -75,6 +69,8 @@ a:hover {
 .gallery {
     display: flex;
     overflow-x: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px; 
 }
 
 .image {
@@ -123,9 +119,9 @@ a:hover {
 }
 
 .preview-box img {
-    width: 100%;
+    width: auto;
     max-width: none;
-    max-height: 62vh; /*ajuste de altura para o modo preview */
+    max-height: auto; /*ajuste de altura para o modo preview */
 }
 
 .preview-box .details {
@@ -133,6 +129,8 @@ a:hover {
     align-items: center;
     padding: 12px 15px 12px 10px;
     justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px; 
 }
 
 .preview-box .details .title {
@@ -230,6 +228,10 @@ a:hover {
     nav {
         display: none;
     }
+
+    .gallery .image {
+        animation: none !important;
+    }
 }
 
 @media (max-width: 768px) {
@@ -240,5 +242,20 @@ a:hover {
 
     nav {
         display: none;
+    }
+
+    .gallery .image {
+        animation: none !important;
+    }
+
+    .preview-box,
+    .details,
+    .title,
+    .slide.next,
+    .slide.prev,
+    .shadow,
+    .preview-box.show,
+    .show {
+        display: none !important;
     }
 }

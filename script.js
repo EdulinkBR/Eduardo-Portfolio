@@ -29,12 +29,14 @@ window.onload = () => {
             }
             preview();
             scrollGallery();
-        }, 5000);
+        }, 9000);
     }
 
     function resetAutoSlide() {
         clearInterval(autoSlide);
-        startAutoSlide();
+        if (!isMouseDown) {
+            startAutoSlide();
+        }
     }
 
     function scrollGallery() {
@@ -57,13 +59,13 @@ window.onload = () => {
 
     galleryContainer.addEventListener('mouseup', () => {
         isMouseDown = false;
-        startAutoSlide();
+        resetAutoSlide();
     });
 
     galleryContainer.addEventListener('mouseleave', () => {
         if (isMouseDown) {
             isMouseDown = false;
-            startAutoSlide();
+            resetAutoSlide();
         }
     });
 
