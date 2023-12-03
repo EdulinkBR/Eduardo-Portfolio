@@ -9,35 +9,78 @@
     <meta name="Portfólio" content="Apresentação dos meus projetos/">
     <title>Eduardo Portfólio</title>
     <link rel="stylesheet" href="./styles.css">
+    <script defer src="nav.js"></script>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <meta property="og:image" content="./Imagens/Fotos do Portfólio/logo.png" />
     <meta property="og:image:width" content="15" />
     <meta property="og:image:height" content="15" />
 </head>
 
 <body>
+   
     <header>
-        <img id="logo" src="./Imagens/Fotos do Portfólio/logo.png">
         <nav>
-            <ul>
+          <div class="navbar">
+            <i class='bx bx-menu'></i>
+            <a href="https://edulinkbr.github.io/">
+              <img id="logo" src="/Imagens/Fotos do Portfólio/logo.png" alt="Logo">
+            </a>
+            <div class="nav-links">
+              <div class="sidebar-logo">
+                  <a href="https://edulinkbr.github.io/">
+                      <img id="logo" src="/Imagens/Fotos do Portfólio/logowhite.png">
+                    </a>
+                 
+                <i class='bx bx-x' ></i>
+              </div>
+              <ul class="links">
+                <li><a href="#">Home</a></li>
                 <li>
-                    <a href="./index.html">Home</a>
+                  <a href="https://edulinkbr.github.io/fotos.html">Fotos</a>
+                  <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+                  <ul class="htmlCss-sub-menu sub-menu">
+      
+                    <li><a href="#">Web Design</a></li>
+                  
+                    <li class="more">
+                      <span><a href="#">Mais</a>
+      
+                      <i class='bx bxs-chevron-right arrow more-arrow'></i>
+      
+                    </span>
+                      <ul class="more-sub-menu sub-menu">
+      
+                        <li><a href="#">Novidades</a></li>
+      
+                      </ul>
+                    </li>
+                  </ul>
                 </li>
-
                 <li>
-                    <a href="./fotos.html">Fotos</a>
+                  <a href="#">Projetos</a>
+                  <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                  <ul class="js-sub-menu sub-menu">
+      
+                    <li><a href="https://shorturl.at/cgAG4" target="_blank">UI-UX Projeto Conhece Recife Web</a></li>
+                    <li><a href="https://shorturl.at/cITX3" target="_blank">UI-UX Projeto Conhece Recife Mobile</a></li>
+                  
+                  </ul>
                 </li>
-
-                <li>
-                    <a href="./comentarios.html">Comentários</a>
-                </li>
-
-                <li>
-                    <a href="./contato.html">Contato</a>
-                </li>
-
-            </ul>
+                <li><a href="#">Contato</a></li>
+              </ul>
+            </div>
+            <div class="search-box">
+              <i class='bx bx-search'></i>
+              <div class="input-box">
+                <input type="text" placeholder="Search...">
+              </div>
+            </div>
+          </div>
+          
         </nav>
-    </header>
+      
+      </header>
+      
 
     <div class="antetitulo"></div>
     <div class="subtitulo"></div>
@@ -242,11 +285,11 @@
             <div class="rowss"><!--Linha9-->
                 <div>
                     <div class="card banner-1"
-                        onclick="window.open('https://www.figma.com/proto/aZCAKaYjlwdBijjp0102EG/Site-2.0?type=design&node-id=1-275&t=5Pr4Wr0Rpw649NQ5-0&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A275', '_blank')">
+                        onclick="window.open('https://shorturl.at/cgAG4', '_blank')">
                         <p>CR Website</p>
                     </div>
                     <div class="card banner-2"
-                        onclick="window.open('https://www.figma.com/proto/QA2YuMlLNI8D4lmCf7JwFN/Conhece-Recife-Mobile?node-id=922-1002&starting-point-node-id=922%3A1002', '_blank')">
+                        onclick="window.open('https://shorturl.at/cITX3', '_blank')">
                         CR Mobible App</div>
                     <div class="card banner-3" onclick="window.open('https://www.linkedin.com/in/edulink/', '_blank')">
                         EduWeb Designer</div>

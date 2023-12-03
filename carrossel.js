@@ -29,7 +29,7 @@ window.onload = () => {
             }
             preview();
             scrollGallery();
-        }, 9000);
+        }, 15000);
     }
 
     function resetAutoSlide() {

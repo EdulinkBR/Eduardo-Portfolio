@@ -15,7 +15,7 @@
 font-weight: 400;
 
 
-# Padrão de Tamanhos Para Fontes PG 117
+# Padrão de Tamanhos Para Fontes PG 117 livro manual do designer
 # Comprimento de linha no máximo entre 40 a 60 px
 
 8px paragrafo, 16px H3, 24px H2, 32px H1, 40px, 48px, 56px, 64px, 72px, 80px, 88px, 96px, 104px, 112px, 120px, 128px, 136px, 144px, 152px, 160px, 168px, 176px, 184px, 192px, 200px, 208px, 216px, 224px, 232px, 240px, 248px, 256px, 264px, 272px, 280px, 288px, 296px, 304px, 312px, 320px, 328px, 336px, 344px, 352px, 360px,
@@ -29,6 +29,6 @@ Texto é 24px
 Subtitulo/titulo 48px
 antetilo 16px
 
-
+ rgba(0, 186, 255, 0.2);
 #00baff
 #333333
