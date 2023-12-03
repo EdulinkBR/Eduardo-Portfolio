@@ -546,15 +546,14 @@ Se esses elementos também existirem fora do .item2 e você não desejar que o p
     .navbar .bx-menu{
         display: block;
       }
-      nav .navbar #logo {
-        margin-right: 40px; /* Adicione esta linha para mover a logo para a esquerda */
-      }
+   
+
       nav .navbar .nav-links{
         position: fixed;
         top: 0;
         left: -100%;
         display: block;
-        max-width: 350px;
+        max-width: 270px;
         width: 100%;
         background:  #00baff;
         line-height: 40px;
@@ -562,19 +561,19 @@ Se esses elementos também existirem fora do .item2 e você não desejar que o p
         transition: all 0.5s ease;
         z-index: 1000;
       }
-      .navbar .nav-links .sidebar-logo{
+      .navbar .nav-links .sidebar-logo {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-left: 30px;
       }
+
       .sidebar-logo .logo-name{
         font-size: 24px;
         color: #fff;
       }
         .sidebar-logo  i,
         .navbar .bx-menu{
-          font-size: 60px;
+          font-size: 24px;
           color: #fff;
         }
       nav .navbar .links{
@@ -660,10 +659,6 @@ Se esses elementos também existirem fora do .item2 e você não desejar que o p
         display: none;
     }
 
-    nav {
-     
-    }
-
     .footer-navigation {
         display: none;
     }
@@ -742,9 +737,6 @@ nav .navbar #logo {
     align-items: center;
     margin-top: 10px;
 }
-
-
-
 
     .gridcontainerss {
         padding-top: 100px;
@@ -872,12 +864,15 @@ nav .navbar #logo {
 
     }
 
-    .rowss:nth-child(10) {
-        /* */
+    .rowss:nth-child(10)  {
+        
 
     }
     .rowss:nth-child(11) {
         /* */
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
     }
 
