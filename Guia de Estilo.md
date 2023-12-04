@@ -32,3 +32,10 @@ antetilo 16px
  rgba(0, 186, 255, 0.2);
 #00baff
 #333333
+
+
+
+Corrigir passagem de foto automatica no modo mobile
+Corrigir posicionamento da logo no header
+Tentar criar novos componentes no futuro e deixar o código mais limpo e simples
+

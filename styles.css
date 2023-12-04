@@ -3,6 +3,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
 }
 
 #logo {
@@ -15,8 +16,42 @@ body {
     background-color: #333333;
 }
 
+a {
+  list-style: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 24px;
+  transition: .5s;
+
+}
+
+iframe {
+  /*Iframe é o conteudo do video declarado no index.html */
+  box-shadow: 0px 0px 10px #00baff, 0px 0px 20px rgba(0, 0, 0, 0.8);
+}
+
+a:hover {
+  color: #00baff;
+}
 
 
+footer {
+  height: 100px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: space-around;
+}
+
+span {
+  color: #ffffff;
+}
+
+
+
+/*H E A D E R */
 
 
 nav{
@@ -27,7 +62,7 @@ nav{
     height: 100%;
     height: 70px;
     background: #333333;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px #00baff, 0px 0px 20px rgba(0, 0, 0, 0.8);
     z-index: 99;
   }
   nav .navbar{
@@ -150,7 +185,7 @@ nav{
     top: 80px;
     height: 60px;
     width: 300px;
-    background: #00baff;
+    background: #333333;
     border-radius: 6px;
     opacity: 0;
     pointer-events: none;
@@ -160,14 +195,14 @@ nav{
     top: 65px;
     opacity: 1;
     pointer-events: auto;
-    background: #00baff;
+    background: #333333;
   }
   .search-box .input-box::before{
     content: '';
     position: absolute;
     height: 20px;
     width: 20px;
-    background: #00baff;
+    background: #333333;
     right: 10px;
     top: -6px;
     transform: rotate(45deg);
@@ -192,54 +227,12 @@ nav{
     display: none;
   }
 
+/*F I M - H E A D E R */
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*header {
-    height: 90px;
-    display: flex;
-    justify-content: space-evenly;
-    /* Ativar o flex para horizontal, space evenly pra melhorar a distribuição 
-    align-items: center;
-}*/
-
-
-
-
-a {
-    list-style: none;
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-    font-weight: 400;
-    font-size: 24px;
-    transition: .5s;
-    font-family: 'Roboto', sans-serif;
-}
-
-iframe {
-    /*Iframe é o conteudo do video declarado no index.html */
-    box-shadow: 0px 0px 10px #00baff, 0px 0px 20px rgba(0, 0, 0, 0.8);
-}
-
-a:hover {
-    color: #00baff;
-}
+/* C A R D S */ 
 
 .card {
 
@@ -256,7 +249,6 @@ a:hover {
     padding: 0 0 20px 10px;
     color: #ffffff;
     font-size: 17px;
-    font-family: 'Roboto', sans-serif;
     box-shadow: 0px 0px 10px #ffffff, 0px 0px 20px rgba(0, 0, 0, 0.8);
 
 }
@@ -282,13 +274,12 @@ a:hover {
     font-weight: 900;
 }
 
+/* C A R D S */ 
+
 .boldnameblue {
     font-weight: 900;
     color: #00baff;
     font-size: 48px;
-
-
-
 }
 
 .boldnameorange {
@@ -301,20 +292,6 @@ a:hover {
     font-weight: 900;
     color: #ffffff;
     font-size: 16px;
-}
-
-footer {
-    height: 300px;
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-self: space-around;
-}
-
-span {
-    color: #ffffff;
-    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -363,28 +340,24 @@ span {
 }
 
 .antetitulo {
-    font-family: 'Roboto', sans-serif;
     color: #ffffff;
     font-size: 16px;
     font-weight: 300;
 }
 
 .titulo {
-    font-family: 'Roboto', sans-serif;
     color: white;
     font-weight: 900;
     font-size: 48px;
 }
 
 .subtitulo {
-    font-family: 'Roboto', sans-serif;
     color: #00baff;
     font-weight: 900;
     font-size: 48px;
 }
 
 .texto {
-    font-family: 'Roboto', sans-serif;
     color: white;
     text-align: left;
     font-size: 24px;
@@ -393,7 +366,6 @@ span {
     text-overflow: ellipsis;
 }
 
-.titulo, .subtitulo, .texto, .antetitulo {}
 
 .linha1, .linha2, .linha3{
     min-height: 800px;
@@ -461,11 +433,6 @@ Se esses elementos também existirem fora do .item2 e você não desejar que o p
     max-height: 100%;
 }
 
-
-
-
-
-/* Adicione estilos adicionais conforme necessário */
 .project-cards-container2 {
     width: 80%;
     display: flex;
@@ -496,7 +463,6 @@ Se esses elementos também existirem fora do .item2 e você não desejar que o p
     padding: 0 0 20px 10px;
     color: #ffffff;
     font-size: 17px;
-    font-family: 'Roboto', sans-serif;
     box-shadow: 0px 0px 10px #ffffff, 0px 0px 20px rgba(0, 0, 0, 0.8);
 
 }
@@ -519,18 +485,10 @@ Se esses elementos também existirem fora do .item2 e você não desejar que o p
 }
 
 
-
-
-
-
-
-
-
-
 .gridcontainerss {
     display: none;
 }
-
+/*Ocultar o container do mobile */
 
 
 @media (min-width: 1141px) and (max-width: 1649px) {}
@@ -777,7 +735,6 @@ nav .navbar #logo {
 
     .rowss:nth-child(2) {
 
-        font-family: 'Roboto', sans-serif;
         font-weight: normal;
         color: #ffffff;
         font-size: 16px;
@@ -810,7 +767,6 @@ nav .navbar #logo {
 
     .rowss:nth-child(5) {
         /* texto sobre mim*/
-        font-family: 'Roboto', sans-serif;
         font-weight: normal;
         color: #ffffff;
         font-size: 16px;
@@ -834,7 +790,6 @@ nav .navbar #logo {
 
     .rowss:nth-child(7) {
         /*video*/
-        font-family: 'Roboto', sans-serif;
         font-weight: normal;
         color: #ffffff;
         font-size: 16px;
@@ -848,7 +803,6 @@ nav .navbar #logo {
 
     .rowss:nth-child(8) {
         /* contxto do video l8*/
-        font-family: 'Roboto', sans-serif;
         font-weight: normal;
         color: #ffffff;
         font-size: 16px;
@@ -886,7 +840,6 @@ nav .navbar #logo {
         text-align: left;
         color: #ffffff;
         font-size: 17px;
-        font-family: 'Roboto', sans-serif;
         box-shadow: 0px 0px 10px #ffffff, 0px 0px 20px rgba(0, 0, 0, 0.8);
         margin-bottom: 30px;
         margin-top: 30px;
