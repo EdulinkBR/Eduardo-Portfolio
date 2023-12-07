@@ -53,6 +53,61 @@ iframe {
 
 
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+    margin-top: 10px;
+}
+
+body {
+    background-color: #333333;
+}
+
+span {
+    color: #ffffff;
+  }
+
+footer {
+    height: 100px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: space-around;
+  }
+
+a { /*link*/
+    list-style: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 24px;
+    transition: .5s;
+}
+
+a:hover {
+    color: #00baff;
+}
+
+iframe {
+    box-shadow: 0px 0px 10px #00baff, 0px 0px 20px rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+
+
 @media (max-width: 768px) {
     .titulo {
         color: white;
@@ -102,18 +157,11 @@ iframe {
 .rowss .texto, .titulo, .antetitulo{
     color: white;
     text-align: left;
-    width: 380px;
     margin: 2px 40px;
 }
 
 
 
-    .rowss:nth-child(1) {
-        align-items: center;
-        justify-content: center;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
 
 
 }
