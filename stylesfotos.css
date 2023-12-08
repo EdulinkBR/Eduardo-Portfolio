@@ -125,7 +125,6 @@ iframe {
         color: white;
         text-align: center;
         font-size: 16px;
-        max-width: auto;
         overflow: hidden;
         text-overflow: ellipsis;
     }
@@ -157,7 +156,7 @@ iframe {
 .rowss .texto, .titulo, .antetitulo{
     color: white;
     text-align: left;
-    margin: 2px 40px;
+    margin: 2px 15px;
 }
 
 

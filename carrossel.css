@@ -193,7 +193,19 @@
             width: 100%;
             padding: 4px;
         }
-    
+
+
+        .slide.prev {
+            left: -20px;
+        }
+        
+        .slide.next {
+            right:-20px;
+        }
+
+    /* OCULTAR SETAS ESQUERDA E DIREITA */
+
+    /*
         .gallery .image {
             animation: none !important;
         }
@@ -204,5 +216,7 @@
        {
             display:none!important;
           }
+
+          /* OCULTAR SETAS ESQUERDA E DIREITA */
         }
     
