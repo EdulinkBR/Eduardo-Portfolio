@@ -136,6 +136,14 @@ iframe {
         justify-content: center;
         align-items: center;
     }
+
+    .gridcontainerss2 {
+        padding-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
     .columnss {
         text-align: center;
         display: grid;
@@ -152,11 +160,15 @@ iframe {
     }
     
     
+.rowss .texto:nth-child(1) {
+font-weight: 300;
+ }
 
 .rowss .texto, .titulo, .antetitulo{
     color: white;
-    text-align: left;
-    margin: 2px 15px;
+    text-align: center;
+    margin: 4px 15px;
+    
 }
 
 

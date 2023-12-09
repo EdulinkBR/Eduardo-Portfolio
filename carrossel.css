@@ -194,6 +194,11 @@
             padding: 4px;
         }
 
+        .containerofphotos .gallery .image {
+            width: 100%;
+            padding: 4px;
+        }
+
 
         .slide.prev {
             left: -20px;

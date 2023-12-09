@@ -8,6 +8,7 @@ window.onload = () => {
         shadow = document.querySelector(".shadow"),
         galleryContainer = document.querySelector('.gallery'),
         wrapper = document.querySelector('.wrapper');
+        
 
     let newIndex = 0;
     let clickedImgIndex;
