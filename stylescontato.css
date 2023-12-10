@@ -110,19 +110,21 @@ label {
 
 
 
+
+
 @media (max-width: 768px) {
     .titulo {
         color: white;
         font-weight: 900;
         font-size: 24px;
     }
-    
+
     .subtitulo {
         color: #00baff;
         font-weight: 900;
         font-size: 32px;
     }
-    
+
     .texto {
         color: white;
         text-align: center;
@@ -131,50 +133,96 @@ label {
         text-overflow: ellipsis;
     }
 
-
     .gridcontainerss {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 200px;
+    }
+    
+        .formulario {
         padding-top: 100px;
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column; /* Exibir os campos verticalmente */
+        width: 80%; /* Ajuste a largura conforme necessário */
+        height: 90px;
     }
 
-    .formulario{
-        padding-top: 100px;
+    .campo input,
+    .campo-mensagem textarea {
+        border: 1px solid #ccc;
+        padding: 5px;
+        margin-top: 15px;
+        width: 100%; /* Ocupa a largura total do container */
+        box-sizing: border-box;
+        
+    }
+
+    .campo {
         display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza os itens verticalmente */
+        
+        
+    }
+
+    label {
+        color: white;
+        font-weight: bold;
+        min-width: 250px;
         justify-content: center;
+        display: flex;
+    }
+
+    .campo-mensagem textarea {
+        margin-top: 15px;
+        margin-left: 0;
+        width: 100%; /* Ocupa a largura total do container */
+       
+    }
+
+    .campo-mensagem textarea,
+    .campo input {
+        margin-bottom: 10px;
+        
+    }
+
+    .campo-botao {
+        display: flex;
+        justify-content: center; /* Centraliza horizontalmente */
+        width: 100%; /* Ocupa a largura total do container */
+        
+    }
+
+    button {
+        width: auto; /* Ajusta a largura do botão conforme necessário */
+        
+    }
+    .icon-container2 {
+        display: flex;
+        margin-top: 100px;
+        padding-top: 15px;
+        padding-bottom: 15px;
         align-items: center;
+        justify-content: center;
     }
-   
-    .columnss {
-        text-align: center;
-        display: grid;
+    
+    .icon-container2 a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        margin: 0 10px; /* Espaçamento entre os ícones */
     }
-    .rowss {
-
-        display: grid;
-
-    }
- 
-    .antetitulo {
-        color: #ffffff;
-        font-size: 12px;
-        font-weight: 300;
+    
+    .icon-container2 img {
+        width: 100%;
+        height: 100%;
     }
     
     
-
-textarea {
-    height: 300px;
-    width: 100%; /* Para ocupar a largura total do container */
-    box-sizing: border-box; /* Para incluir padding na largura total */
-}
-
-
-
-
-
-
-
-
 }

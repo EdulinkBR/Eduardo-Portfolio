@@ -1,4 +1,3 @@
-
 function validarCampos() {
     // Resetar mensagens de erro
     resetarMensagensErro();
@@ -18,6 +17,14 @@ function validarCampos() {
             camposValidos = false;
         }
     });
+
+    if (camposValidos) {
+        // Se os campos são válidos, você pode adicionar aqui o código para enviar o formulário (se necessário)
+        // Exemplo: document.getElementById('meuFormulario').submit();
+
+        // Impedir o comportamento padrão do formulário (redirecionamento)
+        return false;
+    }
 
     return camposValidos;
 }
