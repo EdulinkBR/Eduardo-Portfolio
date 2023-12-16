@@ -109,13 +109,77 @@ label {
 }
 
 .caixa {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas com 1fr cada */
+    grid-template-rows: 2fr 2fr; /* Duas linhas em cada coluna com 2fr cada */
+    width: auto;
+    height: 700px;
   }
- 
+  
+  /* Estilos adicionais para ilustrar a estrutura */
+  .col1, .col2 {
+    border: 1px solid black; /* Adiciona borda para visualização */
+  }
+  
+  .li1, .li2 {
+    border: 1px solid gray; /* Adiciona borda para visualização */
+  }
 
+
+
+ .icon-container2{
+    display: none;
+ }
+ .formulario {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Exibir os campos verticalmente */
+    width: 80%; /* Ajuste a largura conforme necessário */
+    height: 90px;
+}
+
+.iconesweb {
+    margin-top: 15px;
+}
+
+.iconesweb a {
+    position: relative;
+    display: inline-block;
+    margin-right: 70px;
+}
+
+.iconesweb img {
+    width: 48px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.iconesweb img:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.iconesweb img+img {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.iconesweb a:hover img {
+    visibility: hidden;
+}
+
+.iconesweb a:hover img+img {
+    visibility: visible;
+}
 
 
 @media (max-width: 768px) {
+   .caixa{
+    display: none;
+   }
     .titulo {
         color: white;
         font-weight: 900;
@@ -211,6 +275,7 @@ label {
         padding-bottom: 15px;
         align-items: center;
         justify-content: center;
+        
     }
     
     .icon-container2 a {
