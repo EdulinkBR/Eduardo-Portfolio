@@ -85,44 +85,79 @@
     <div class="titulo"></div>
     <div class="texto"></div>
 
-<div class="caixa">
-<div class="col1">
-<div class="li1">
-  <div class="formulario"> </div>
-</div>
-<div class="li2"></div>
-</div>
+    <div class="caixa">
+      <div class="col1">
+        <div class="li1">
+          <form action="https://formspree.io/f/mwkdgngo" method="post" target="_blank">
+            <div class="centrar-campos">
+                <!-- Campo Nome -->
+                <div class="campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" class="campo-obrigatorio" required>
+                    <span class="mensagem-erro" id="erroNome"></span>
+                </div>
+
+                <!-- Campo Email -->
+                <div class="campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" class="campo-obrigatorio" required>
+                    <span class="mensagem-erro" id="erroEmail"></span>
+                </div>
+            </div>
+
+            <!-- Campo Mensagem -->
+            <div class="campo-mensagem">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" class="campo-obrigatorio" rows="4" required></textarea>
+                <span class="mensagem-erro" id="erroMensagem"></span>
+            </div>
+
+            <!-- Botão Enviar -->
+            <div class="campo-botao">
+                <button type="submit">Enviar</button>
+            </div>
+
+            <!-- Mensagem de sucesso (inicialmente oculta) -->
+            <div id="mensagemSucesso" style="display: none; color: green; margin-top: 10px;">
+                E-mail enviado com sucesso! <button onclick="fecharMensagem()">Fechar</button>
+            </div>
+        </form>
+        </div>
+        <div class="li2">
+          <div class="iconesweb">
+            <a href="https://www.linkedin.com/in/edulink/" target="_blank">
+              <img id="icon-1-original" src="icones/linkedinw.png" alt="LinkedIn" />
+              <img id="icon-1-fake" src="icones/linkedinblu.png" alt="LinkedIn Blue" />
+            </a>
+            <a href="https://wa.me/5581988459374" target="_blank">
+              <img id="icon-2-original" src="icones/whatsw.png" alt="Whatsapp" />
+              <img id="icon-2-fake" src="icones/whatswblu.png" alt="Whatsapp Blue" />
+            </a>
+            <a href="https://github.com/EdulinkBR" target="_blank">
+              <img id="icon-3-original" src="icones/githubw.png" alt="Github" />
+              <img id="icon-3-fake" src="icones/githubblu.png" alt="Github Blue" />
+            </a>
+            <a href="https://www.instagram.com/edulink90/" target="_blank">
+              <img id="icon-4-original" src="icones/instaw.png" alt="Instagram" />
+              <img id="icon-4-fake" src="icones/instablu.png" alt="Instagram Blue" />
+            </a>
+          </div>
 
 
-  <div class="col2">
+        </div>
+      </div>
     
-  <div class="li1">
-    <div class="iconesweb">
-      <a href="https://www.linkedin.com/in/edulink/" target="_blank">
-          <img id="icon-1-original" src="icones/linkedinw.png" alt="LinkedIn" />
-          <img id="icon-1-fake" src="icones/linkedinblu.png" alt="LinkedIn Blue" />
-      </a>
-      <a href="https://wa.me/5581988459374" target="_blank">
-          <img id="icon-2-original" src="icones/whatsw.png" alt="Whatsapp" />
-          <img id="icon-2-fake" src="icones/whatswblu.png" alt="Whatsapp Blue" />
-      </a>
-      <a href="https://github.com/EdulinkBR" target="_blank">
-          <img id="icon-3-original" src="icones/githubw.png" alt="Github" />
-          <img id="icon-3-fake" src="icones/githubblu.png" alt="Github Blue" />
-      </a>
-      <a href="https://www.instagram.com/edulink90/" target="_blank">
-          <img id="icon-4-original" src="icones/instaw.png" alt="Instagram" />
-          <img id="icon-4-fake" src="icones/instablu.png" alt="Instagram Blue" />
-      </a>
-  </div>
-  </div>
-  </div>
+      <div class="col2">
+        <img src="./Imagens/Fotos do Portfólio/foto3.jpg" alt="fotocontato">
+        <div class="li1">
+        
+        </div>
+        <div class="li2"></div>
+      </div>
+    </div>
+    
 
-  </div>
   
-
-  <div class="li2"></div>
-  </div>
  
 
 

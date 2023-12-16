@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.caixa {
+    display: grid;
+    grid-template-columns: 2fr 2fr; /* Duas colunas com 2fr cada */
+    grid-template-rows: 300px 300px; /* Duas linhas com 300px cada */
+    height: 800px;
+    width: auto;
+    border: 1px solid black; /* Borda preta para a div pai (.caixa) */
+}
+
+.col1 {
+    background-color: #FFD700; /* Cor de fundo amarela para a primeira coluna */
+    padding: 20px;
+}
+
+.col2 {
+    background-color: #00FFFF; /* Cor de fundo ciano para a segunda coluna */
+    padding: 20px;
+}
+
+.li1 {
+    background-color: #2bcde2; /* Cor de fundo roxa para a primeira linha */
+    border: 1px solid #000000; /* Borda preta para a div filho (.li1) */
+    margin: 10px;
+    padding: 10px;
+}
+
+.li2 {
+    background-color: #00FF00; /* Cor de fundo verde para a segunda linha */
+    border: 1px solid #000000; /* Borda preta para a div filho (.li2) */
+    margin: 10px;
+    padding: 10px;
+}
