@@ -55,25 +55,51 @@ label {
 
 .col2 img[src='./Imagens/Fotos do Portfólio/foto3.jpg'] {
     width: auto;
-    height: 35vw;
+    height: 28vw;
     display: block; /* Para remover espaços em branco abaixo da imagem */
-   
+    margin: 0 auto; /* Adiciona margem automática nas laterais para centralizar */
  }
 
 
+ .antetitulo {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.titulo {
+    color: white;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.subtitulo {
+    color: #00baff;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.texto {
+    color: white;
+    text-align: left;
+    font-size: 24px;
+    max-width: 35vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 
 
 
  .caixa {
     display: grid;
-    grid-template-columns:600px 1fr; /* Largura de 200px para col1, o restante para col2 */
-    grid-template-rows: auto auto; /* Duas linhas em cada coluna com 300px cada */
+    grid-template-columns:600px 400px auto; /* Largura de 200px para col1, o restante para col2 */
+    grid-template-rows: auto auto auto; /* Duas linhas em cada coluna com 300px cada */
     width: auto;
-    height: 700px;
+    height: 600px;
     margin-top: 150px;
     grid-template-areas: 
-        "col1 col2";
+        "col1 col2 col3";
 }
 
 .col1 {
@@ -84,6 +110,11 @@ label {
 .col2 {
 
     grid-area: col2; /* Associa à área especificada em grid-template-areas */
+}
+
+.col3 {
+
+    grid-area: col3; /* Associa à área especificada em grid-template-areas */
 }
 
   
@@ -118,7 +149,7 @@ display: flex;
     border: 1px solid #ccc;
     padding: 5px;
     margin-top: 15px;
-    width: 30vw; /* Ocupa a largura total do container */
+    width: 20vw; /* Ocupa a largura total do container */
     box-sizing: border-box;
 }
 
@@ -131,7 +162,7 @@ display: flex;
 label {
     color: white;
     font-weight: bold;
-    min-width: 30vw;
+    min-width: 20vw;
     text-align: center; /* Centraliza o texto da label */
 }
 
@@ -146,13 +177,14 @@ label {
 }
 .campo label {
     text-align: left;
+ 
 }
 
 
 .campo-mensagem textarea {
     margin-top: 15px;
     margin-left: 0;
-    width: 30vw; /* Ocupa a largura total do container */
+    width: 20vw; /* Ocupa a largura total do container */
     height: 15vw;
     box-sizing: border-box;
     text-align: left; /* Alinha o texto à esquerda dentro do textarea */
@@ -169,8 +201,29 @@ label {
     width: 100%; /* Ocupa a largura total do container */
 }
 
-button {
-    width: auto; /* Ajusta a largura do botão conforme necessário */
+.myButton {
+    
+    background: linear-gradient(to bottom, #00bbff 5%, #00bbff 100%);
+    background-color: #00bbff;
+    border-radius: 0px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 13px 32px;
+    text-decoration: none;
+    
+}
+
+.myButton:hover {
+    background: linear-gradient(to bottom, #00bbff 5%, #00bbff 100%);
+    background-color: #00bbff;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
 }
 
 
