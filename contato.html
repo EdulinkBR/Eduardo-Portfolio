@@ -91,7 +91,7 @@
   <div class="caixa">
     <div class="col1">
       <div class="li1">
-        <form action="https://formspree.io/f/mwkdgngo" method="post" target="_blank">
+        <form id="formulario1" action="https://formspree.io/f/mwkdgngo" method="post" target="_blank" onsubmit="return validarCampos('formulario1');">
           <div class="centrar-campos">
             <!-- Campo Nome -->
             <div class="campo">
@@ -117,7 +117,7 @@
 
           <!-- Botão Enviar -->
           <div class="campo-botao">
-            <a href="#" class="myButton">Enviar</a>
+            <button type="submit" class="myButton">Enviar</button>
         </div>
 
           <!-- Mensagem de sucesso (inicialmente oculta) -->
@@ -127,7 +127,34 @@
         </form>
       </div>
       <div class="li2">
-        <div class="iconesweb">
+        
+
+
+      </div>
+    </div>
+
+    <div class="col2">
+      <img src="./Imagens/Fotos do Portfólio/foto3.jpg" alt="fotocontato">
+      <div class="li1">
+
+      </div>
+      <div class="li2"></div>
+    </div>
+
+    <div class="col3">
+
+      <div class="li1">
+        
+          <div class="subtitulo">
+            <p>Seu feedback é bem-vindo!</p>
+          </div>
+          <div class="texto">
+            <p>Se você tiver alguma dúvida, oportunidade ou simplesmente quiser conhecer mais sobre meu trabalho, por favor,
+              sinta-se à vontade para entrar em contato.</p>
+          </div>
+          <div class="campo-botao">
+            <a href="./Documentos/Edu Cv..pdf" class="myButton">Download CV</a>
+        </div>  <div class="iconesweb">
           <a href="https://www.linkedin.com/in/edulink/" target="_blank">
             <img id="icon-1-original" src="icones/linkedinw.png" alt="LinkedIn" />
             <img id="icon-1-fake" src="icones/linkedinblu.png" alt="LinkedIn Blue" />
@@ -145,46 +172,10 @@
             <img id="icon-4-fake" src="icones/instablu.png" alt="Instagram Blue" />
           </a>
         </div>
-
-
       </div>
-    </div>
-
-    <div class="col2">
-      <img src="./Imagens/Fotos do Portfólio/foto3.jpg" alt="fotocontato">
-      <div class="li1">
-
       </div>
-      <div class="li2"></div>
-    </div>
-
-    <div class="col3">
-
-      <div class="li1">
-        <div class="antetitulo">
-          <p></p>
-          <div class="subtitulo">
-            <p>Seu feedback é valioso!</p>
-          </div>
-          <div class="texto">
-            <p>Se você tiver alguma dúvida, oportunidade ou simplesmente quiser conhecer mais sobre meu trabalho, por favor,
-              sinta-se à vontade para entrar em contato.</p>
-          </div>
-          <div class="campo-botao">
-            <a href="./Documentos/Edu Cv..pdf" class="myButton">Download CV</a>
-        </div>
-        </div>
-        </div>
-
-      </div>
-      <div class="li2">
-      
-      <div class="li3">
-    
-    </div>
-    
   </div>
-  </div>
+ 
 
 
 
@@ -192,26 +183,24 @@
 
 
 
+<!-- @ M E D I A  -->
 
-
-<div class="icon-container2">
-  <a href="https://www.linkedin.com/in/edulink/" target="_blank">
-    <img id="icon-1-original" src="icones/linkedinw.png" alt="LinkedIn" />
-  </a>
-  <a href="https://wa.me/5581988459374" target="_blank">
-    <img id="icon-2-original" src="icones/whatsw.png" alt="Whatsapp" />
-  </a>
-  <a href="https://github.com/EdulinkBR" target="_blank">
-    <img id="icon-3-original" src="icones/githubw.png" alt="Github" />
-  </a>
-  <a href="https://www.instagram.com/edulink90/" target="_blank">
-    <img id="icon-4-original" src="icones/instaw.png" alt="Instagram" />
-  </a>
-</div>
 
 <div class="gridcontainerss">
+
+  <div class="box">
+    <div class="subtitulo">
+      <p>Fale comigo!</p>
+    </div>
+    <div class="texto1">
+      <p>Se você tiver alguma dúvida, oportunidade ou simplesmente quiser conhecer mais sobre meu trabalho, por favor,
+        sinta-se à vontade para entrar em contato.</p>
+    </div>
+  <img src="./Imagens/Fotos do Portfólio/foto3mob.jpg" alt="fotocontato">
+</div>
   <div class="formulario">
-    <form action="https://formspree.io/f/mwkdgngo" method="post" target="_blank">
+    <form id="formulario1Mobile" action="https://formspree.io/f/mwkdgngo" method="post" target="_blank" onsubmit="return validarCampos('formulario1Mobile');">
+      <!-- ... (restante do código do formulário) -->
       <div class="centrar-campos">
         <!-- Campo Nome -->
         <div class="campo">
@@ -237,18 +226,33 @@
 
       <!-- Botão Enviar -->
       <div class="campo-botao">
-        <button type="submit">Enviar</button>
-      </div>
+        <button type="submit" class="myButton">Enviar</button>
+    </div>
 
       <!-- Mensagem de sucesso (inicialmente oculta) -->
       <div id="mensagemSucesso" style="display: none; color: green; margin-top: 10px;">
         E-mail enviado com sucesso! <button onclick="fecharMensagem()">Fechar</button>
       </div>
     </form>
+    <div class="icon-container2">
+      <a href="https://www.linkedin.com/in/edulink/" target="_blank">
+        <img id="icon-1-original" src="icones/linkedinw.png" alt="LinkedIn" />
+      </a>
+      <a href="https://wa.me/5581988459374" target="_blank">
+        <img id="icon-2-original" src="icones/whatsw.png" alt="Whatsapp" />
+      </a>
+      <a href="https://github.com/EdulinkBR" target="_blank">
+        <img id="icon-3-original" src="icones/githubw.png" alt="Github" />
+      </a>
+      <a href="https://www.instagram.com/edulink90/" target="_blank">
+        <img id="icon-4-original" src="icones/instaw.png" alt="Instagram" />
+      </a>
+    </div>
+    
   </div>
 </div>
 
-
+<!-- @ FIM M E D I A  -->
 
 
 

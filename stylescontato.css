@@ -24,7 +24,7 @@ span {
 
 footer {
     height: 100px;
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,9 +40,7 @@ a { /*link*/
     transition: .5s;
 }
 
-a:hover {
-    color: #00baff;
-}
+
 
 iframe {
     box-shadow: 0px 0px 10px #00baff, 0px 0px 20px rgba(0, 0, 0, 0.8);
@@ -93,22 +91,22 @@ label {
 
  .caixa {
     display: grid;
-    grid-template-columns:600px 400px auto; /* Largura de 200px para col1, o restante para col2 */
+    grid-template-columns:1fr 1fr 1fr; /* Largura de 200px para col1, o restante para col2 */
     grid-template-rows: auto auto auto; /* Duas linhas em cada coluna com 300px cada */
     width: auto;
-    height: 600px;
+    height: 500px;
     margin-top: 150px;
     grid-template-areas: 
         "col1 col2 col3";
 }
 
 .col1 {
- 
+ margin-left: 100px;
     grid-area: col1; /* Associa à área especificada em grid-template-areas */
 }
 
 .col2 {
-
+    
     grid-area: col2; /* Associa à área especificada em grid-template-areas */
 }
 
@@ -122,16 +120,41 @@ label {
    
     height: 400px ;
     width:auto;
+    
   }
-  
+  .col3 .li1 {
+   
+    height: 30vw ;
+    width:auto;
+    display: flex;
+    flex-wrap: wrap;
+   flex-direction: row;
+   align-content: start;
+
+    
+  }
+  .col2 .li1{
+
+  }
+
+  .col3 .li2 {
+    height: 100px;
+  }
+
+
   .li2 {
-display: flex;
+    display: flex;
     height: 250px ;
     width:auto;
     align-items: center;
     justify-content: center;
+    
   }
   
+.col3 .li1, .texto .antetitulo .subtitulo{
+
+    text-align: center;
+}
 
   
 
@@ -199,6 +222,7 @@ label {
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     width: 100%; /* Ocupa a largura total do container */
+    margin-top: 20px;
 }
 
 .myButton {
@@ -251,8 +275,11 @@ label {
 }
 
 .iconesweb {
-    margin-top: 15px;
-   
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Centraliza horizontalmente */
+    margin-left: 25px;
 }
 
 .iconesweb a {
@@ -332,6 +359,18 @@ label {
 
 
 @media (max-width: 768px) {
+    .gridcontainerss img[src='./Imagens/Fotos do Portfólio/foto3mob.jpg'] {
+        width: auto;
+        height: 100vw;
+   display: flex;
+   margin-top: 50px;
+     }
+ .box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+
    .caixa{
     display: none;
    }
@@ -339,20 +378,32 @@ label {
         color: white;
         font-weight: 900;
         font-size: 24px;
+        text-align: center;
+        width: auto;
     }
 
     .subtitulo {
         color: #00baff;
         font-weight: 900;
         font-size: 32px;
+        text-align: center;
+        width: 90vw;
+        margin-top: 35px;
+
     }
 
     .texto {
+      
+    }
+    .box .texto1{
         color: white;
         text-align: center;
         font-size: 16px;
         overflow: hidden;
         text-overflow: ellipsis;
+        width: 90vw;
+        margin-top: 2vw
+
     }
 
     .gridcontainerss {
@@ -361,35 +412,34 @@ label {
         justify-content: center;
         align-items: center;
         padding-bottom: 200px;
+        flex-direction: column;
     }
     
-        .formulario {
-        padding-top: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column; /* Exibir os campos verticalmente */
-        width: 80%; /* Ajuste a largura conforme necessário */
-        height: 90px;
-    }
+    .formulario {
+    margin-top: 150px; /* ou ajuste conforme necessário */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Exibir os campos verticalmente */
+    /* Remova a linha 'height: 90px;' */
+}
+    
 
     .campo input,
-    .campo-mensagem textarea {
-        border: 1px solid #ccc;
-        padding: 5px;
-        margin-top: 15px;
-        width: 100%; /* Ocupa a largura total do container */
-        box-sizing: border-box;
-        
-    }
+.campo-mensagem textarea {
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-top: 15px;
+    width: 100%; /* Ocupa a largura total do container */
+    box-sizing: border-box;
+}
 
-    .campo {
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Centraliza os itens verticalmente */
-        
-        
-    }
+.campo {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens verticalmente */
+    width: 100%; /* Adicione esta linha */
+}
 
     label {
         color: white;
@@ -419,14 +469,10 @@ label {
         
     }
 
-    button {
-        width: auto; /* Ajusta a largura do botão conforme necessário */
-        
-    }
+    
     .icon-container2 {
         display: flex;
-        margin-top: 100px;
-        padding-top: 15px;
+        margin-top: 80px;
         padding-bottom: 15px;
         align-items: center;
         justify-content: center;
