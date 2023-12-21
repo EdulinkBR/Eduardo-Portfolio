@@ -94,10 +94,11 @@ label {
     grid-template-columns:1fr 1fr 1fr; /* Largura de 200px para col1, o restante para col2 */
     grid-template-rows: auto auto auto; /* Duas linhas em cada coluna com 300px cada */
     width: auto;
-    height: 500px;
+    height: 600px;
     margin-top: 150px;
     grid-template-areas: 
         "col1 col2 col3";
+        overflow: hidden;
 }
 
 .col1 {
@@ -156,16 +157,7 @@ label {
     text-align: center;
 }
 
-  
 
-
-
-
-  body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 .campo input,
 .campo-mensagem textarea {
@@ -250,17 +242,14 @@ label {
     top: 1px;
 }
 
-
-
-
-
-
-
-
  .icon-container2{
     display: none;
  }
 .gridcontainerss{
+    display: none;
+}
+
+.box{
     display: none;
 }
 
@@ -334,31 +323,8 @@ label {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 768px) {
+
     .gridcontainerss img[src='./Imagens/Fotos do Portfólio/foto3mob.jpg'] {
         width: auto;
         height: 100vw;
@@ -411,17 +377,15 @@ label {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-bottom: 200px;
         flex-direction: column;
     }
     
     .formulario {
-    margin-top: 150px; /* ou ajuste conforme necessário */
+    margin-top: 50px; 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; /* Exibir os campos verticalmente */
-    /* Remova a linha 'height: 90px;' */
 }
     
 
@@ -438,7 +402,7 @@ label {
     display: flex;
     flex-direction: column;
     align-items: center; /* Centraliza os itens verticalmente */
-    width: 100%; /* Adicione esta linha */
+    width: 100%; 
 }
 
     label {
@@ -472,8 +436,7 @@ label {
     
     .icon-container2 {
         display: flex;
-        margin-top: 80px;
-        padding-bottom: 15px;
+        margin-top: 168px;
         align-items: center;
         justify-content: center;
         
