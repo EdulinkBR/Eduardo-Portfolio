@@ -38,7 +38,7 @@ a:hover {
 
 footer {
   height: 100px;
-  margin-top: 100px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,6 +47,33 @@ footer {
 
 span {
   color: #ffffff;
+}
+
+/*Items de tecnologias usadas*/
+.techbox{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-items: center;
+margin-top: 20px;
+padding-bottom: 20px;
+}
+.html-icon{
+    background: url('./icones/html.png') center/contain no-repeat;
+}
+
+.css-icon {
+    background: url('./icones/css.png') center/contain no-repeat;
+}
+
+.js-icon {
+    background: url('./icones/js.png') center/contain no-repeat;
+}
+
+.html-icon, .css-icon ,.js-icon {
+    width: 60px;
+    height: 60px;
+    
 }
 
 
@@ -307,11 +334,6 @@ Se esses elementos também existirem fora do .item2 e você não desejar que o p
 /*Ocultar o container do mobile */
 
 
-@media (min-width: 1141px) and (max-width: 1649px) {}
-
-
-@media (min-width: 1141px) and (max-width: 1268px) {}
-
 @media (max-width: 768px) {
 
 
@@ -320,7 +342,7 @@ Se esses elementos também existirem fora do .item2 e você não desejar que o p
     }
 
     footer {
-        display: none;
+    
     }
 
     .footer-list {

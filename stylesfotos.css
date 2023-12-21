@@ -31,6 +31,33 @@ footer {
     justify-self: space-around;
   }
 
+/*Items de tecnologias usadas*/
+.techbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    }
+    .html-icon{
+        background: url('./icones/html.png') center/contain no-repeat;
+    }
+    
+    .css-icon {
+        background: url('./icones/css.png') center/contain no-repeat;
+    }
+    
+    .js-icon {
+        background: url('./icones/js.png') center/contain no-repeat;
+    }
+    
+    .html-icon, .css-icon ,.js-icon {
+        width: 60px;
+        height: 60px;
+        
+    }
+
 a { /*link*/
     list-style: none;
     color: rgb(255, 255, 255);
